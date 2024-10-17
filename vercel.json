@@ -1,7 +1,10 @@
 {
   "functions": {
-    "flask-api/app.py": {
-      "runtime": "python3.11"  
+    "app.py": {
+      "runtime": "python3.11"
     }
-  }
+  },
+  "rewrites": [
+    { "source": "/api/predict", "destination": "/app.py" }
+  ]
 }

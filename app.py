@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify
 import joblib
-
+from flask_cors import CORS  # Import CORS
 app = Flask(__name__)
-
+CORS(app)
 # Load your trained Random Forest model
 model = joblib.load('cancer_model.sav')
 
