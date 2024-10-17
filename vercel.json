@@ -1,10 +1,10 @@
 {
   "functions": {
-    "app.py": {
-      "runtime": "python3.11"
+    "flask-api/app.py": {
+      "runtime": "vercel-python3.11"  
     }
   },
   "rewrites": [
-    { "source": "/api/predict", "destination": "/app.py" }
+    { "source": "/api/predict", "destination": "/flask-api/app.py" }
   ]
 }
