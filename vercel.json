@@ -2,15 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "flask_api/app.py",  
+      "src": "app.py",
       "use": "@vercel/python",
-      "config": { "runtime": "python3.9" }  
+      "config": { "runtime": "python3.9" }
     }
   ],
   "routes": [
     {
-      "src": "/api/predict",         
-      "dest": "flask_api/app.py"    
-    }  
+      "src": "/api/predict",
+      "dest": "app.py"
+    }
   ]
 }
