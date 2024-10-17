@@ -6,6 +6,10 @@ app = Flask(__name__)
 # Load your trained Random Forest model
 model = joblib.load('cancer_model.sav')
 
+@app.route('/', methods=['GET'])
+def home():
+    return "Cancer Detection API is running!"
+
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.json
