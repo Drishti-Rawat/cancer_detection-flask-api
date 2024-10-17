@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "flash_api/app.py",  
+      "src": "flask_api/app.py",  
       "use": "@vercel/python",
       "config": { "runtime": "python3.9" }  
     }
@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/api/predict",         
-      "dest": "flash_api/app.py"    
+      "dest": "flask_api/app.py"    
     }  
   ]
 }
