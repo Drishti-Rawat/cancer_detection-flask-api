@@ -1,8 +1,15 @@
 {
-    "functions": {
-      "dlask-api/app.py": {
-        "runtime": "python3.9"
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.py",
+        "use": "@vercel/python"
       }
-    }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "app.py"
+      }
+    ]
   }
-  
