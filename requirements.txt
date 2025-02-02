@@ -5,3 +5,5 @@ scikit-learn
 flask-cors 
 numpy
 opencv-python
+xgboost
+Pillow
